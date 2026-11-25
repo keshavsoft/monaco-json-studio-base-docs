@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monaco JSON Studio Base — Docs</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./index.html">
+      <span>Monaco JSON Studio Base</span>
+      <span class="badge">Base</span>
+    </a>
+    <nav class="nav">
+      <a class="active" href="./index.html">Overview</a>
+      <a href="./base-header.html">Header</a>
+      <a href="./base-body.html">Body</a>
+      <a href="./base-footer.html">Footer</a>
+      <a href="https://keshavsoft.github.io/monaco-json-studio-docs/">Studio Docs ↗</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <h1>Reusable <code>.hbs</code> Region Primitives</h1>
+      <p>
+        The Base suite separates an HTML page into three independent Handlebars (<code>.hbs</code>) building blocks:
+        <strong>Header</strong>, <strong>Body</strong>, and <strong>Footer</strong>. Each package owns its templates,
+        styles, and browser runtime so higher-level apps—Monaco studios or future HTML builders—can compose them freely.
+      </p>
+    </div>
+
+    <section>
+      <h2>The 3 Base Packages</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>monaco-json-studio-base-header</h3>
+          <p><code>title</code>, <code>file-picker</code>, <code>select</code>, and <code>actions</code> headers powered by <code>.hbs</code> &amp; <code>dom-primitive-bindings</code>.</p>
+          <div class="card-links">
+            <a href="./base-header.html">Overview</a>
+            <a href="https://keshavsoft.github.io/monaco-json-studio-base-header/">Repo Docs</a>
+            <a href="https://www.npmjs.com/package/monaco-json-studio-base-header">npm</a>
+            <a href="https://github.com/keshavsoft/monaco-json-studio-base-header">GitHub</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>monaco-json-studio-base-body</h3>
+          <p><code>single</code>, <code>double</code>, and <code>triple</code> pane workspace <code>.hbs</code> layouts paired with the Monaco mounting runtime.</p>
+          <div class="card-links">
+            <a href="./base-body.html">Overview</a>
+            <a href="https://keshavsoft.github.io/monaco-json-studio-base-body/">Repo Docs</a>
+            <a href="https://www.npmjs.com/package/monaco-json-studio-base-body">npm</a>
+            <a href="https://github.com/keshavsoft/monaco-json-studio-base-body">GitHub</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>monaco-json-studio-base-footer</h3>
+          <p><code>cursor</code>, <code>note</code>, <code>status</code>, and <code>stats</code> footers with live cursor and JSON validation updaters.</p>
+          <div class="card-links">
+            <a href="./base-footer.html">Overview</a>
+            <a href="https://keshavsoft.github.io/monaco-json-studio-base-footer/">Repo Docs</a>
+            <a href="https://www.npmjs.com/package/monaco-json-studio-base-footer">npm</a>
+            <a href="https://github.com/keshavsoft/monaco-json-studio-base-footer">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>How Consumers Compose Base</h2>
+      <pre><code>monaco-json-studio-base-header (.hbs + dom-primitive-bindings) ─┐
+monaco-json-studio-base-body   (.hbs 1/2/3 panes + Monaco)      ─┼─► Studio / HTML App
+monaco-json-studio-base-footer (.hbs + cursor/stats updaters)   ─┘</code></pre>
+      <p>See <a href="https://keshavsoft.github.io/monaco-json-studio-docs/">Studio Docs</a> for how <code>single</code>, <code>double</code>, and <code>triple</code> assemble these blocks.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    KeshavSoft · Documentation for the Monaco JSON Studio Base primitives
+  </footer>
+</body>
+</html>
